@@ -1,12 +1,12 @@
 package disjointSet;
 
-public class DisjointSetImp implements DisjointSet{
+public class HeuristicDisjointSet implements DisjointSet{
 
     private int[] parent;
     private int[] rank;
     private int size;
 
-    public DisjointSetImp(int[] nodos){
+    public HeuristicDisjointSet(int[] nodos){
         size = 0;
         parent = new int[nodos.length];
         for(int i=0; i<nodos.length; i++){
