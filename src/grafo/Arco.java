@@ -3,6 +3,7 @@ package grafo;
 public class Arco {
 	private int nodo1;
 	private int nodo2;
+	private int nodeNo;
 	
 	public Arco(int i, int j) {
 		// TODO Auto-generated constructor stub
