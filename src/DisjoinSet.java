@@ -1,6 +1,6 @@
 
 public interface DisjoinSet {
-	Nodo findSet();
+	void findSet();
 	void makeSet();
 	void unionSet();
 }

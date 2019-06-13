@@ -2,11 +2,11 @@ package grafo;
 
 import java.util.ArrayList;
 
-private class Pesado {
+public class Pesado {
 	private Arco arco;
 	private int peso;
 	
-	private Pesado(ArrayList<Integer> arcoLista, int peso) {
+	public Pesado(ArrayList<Integer> arcoLista, int peso) {
 		// TODO Auto-generated constructor stub
 		this.arco = new Arco(arcoLista.get(0), arcoLista.get(1));
 		this.peso = peso;

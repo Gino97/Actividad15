@@ -1,5 +1,6 @@
 import java.io.IOException;
 import java.io.InputStream;
+import grafo.*;
 import java.util.Scanner;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -41,7 +42,7 @@ import grafo.Grafo;
 			System.out.println("Tengo el grafo en formato JSON. Lo convierto...");
 			Gson gson = new GsonBuilder().create();
 			try{
-				Grafo.GrafoObj gr = gson.fromJson(jsonString, Grafo.GrafoObj.class);
+				GrafoObj gr = gson.fromJson(jsonString, GrafoObj.class);
 				return new Grafo(gr);
 			} catch (Exception e) {
 				throw new Exception(jsonString);
