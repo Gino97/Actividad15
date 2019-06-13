@@ -9,6 +9,7 @@ public class HeuristicDisjointSet implements DisjointSet{
     public HeuristicDisjointSet(int[] nodos){
         size = 0;
         parent = new int[nodos.length];
+        rank = new int[nodos.length];
         for(int i=0; i<nodos.length; i++){
             makeSet(i);
             size++;
@@ -17,7 +18,7 @@ public class HeuristicDisjointSet implements DisjointSet{
 
     public int findSet(int nodo){
         if(nodo!= parent[nodo]){
-            parent[nodo] = findSet(nodo);
+            parent[nodo] = findSet(parent[nodo]);
         }
         return parent[nodo];
     }
@@ -42,5 +43,9 @@ public class HeuristicDisjointSet implements DisjointSet{
                 rank[y] = rank[y] + 1;
             }
         }
+    }
+
+    public int size(){
+        return size;
     }
 }

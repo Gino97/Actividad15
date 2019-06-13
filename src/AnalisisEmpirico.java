@@ -1,5 +1,7 @@
 import java.io.IOException;
 import java.io.InputStream;
+
+import disjointSet.ConexoDisjointSet;
 import grafo.*;
 import java.util.Scanner;
 import com.google.gson.Gson;
@@ -12,9 +14,10 @@ import grafo.Grafo;
 		public static void main(String[] args) throws IOException {
 			
 			try{
-				Grafo grafo = getGrafo(6,6);
+				Grafo grafo = getGrafo(500,1000);
 				System.out.println("Grafo conexo con "+ grafo.getNodosCount() + " nodos y "+ grafo.getArcosCount() + " arcos construido");
-				System.out.println(grafo.bfs());
+				ConexoDisjointSet conexoDisjointSet = new ConexoDisjointSet(grafo);
+				System.out.println(conexoDisjointSet.conexo());
 			} catch (Exception e) {
 				System.out.println(e.getMessage());
 			}
