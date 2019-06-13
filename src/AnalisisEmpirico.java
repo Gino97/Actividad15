@@ -4,6 +4,8 @@ import java.util.Scanner;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+import grafo.Grafo;
+
 	public class AnalisisEmpirico{
 		
 		public static void main(String[] args) throws IOException {
@@ -18,8 +20,8 @@ import com.google.gson.GsonBuilder;
 			
 			
 			/*
-			 * Generar varios grafos de diferente configuración y buscar 
-			 * árbol de cubrimiento minimal para cada uno. 
+			 * Generar varios grafos de diferente configuraciï¿½n y buscar 
+			 * ï¿½rbol de cubrimiento minimal para cada uno. 
 			 * 
 			 * Medir el rendimiento usando timestamps.
 			 * 
