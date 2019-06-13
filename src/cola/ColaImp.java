@@ -10,8 +10,8 @@ public class ColaImp<E> implements Cola<E> {
 	}
 
 	@Override
-	public E dequeue() {
-		return lista.remove(list.first());
+	public E dequeue() throws EmptyListException {
+		return lista.remove(lista.first());
 	}
 
 	@Override
