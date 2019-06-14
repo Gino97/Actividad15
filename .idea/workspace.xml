@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c367757-e8f9-4303-8acd-aab975137544" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/kruskal/sorter/MergeSorter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kruskal/sorter/Sorter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kruskal/KruskaOrdenadoConHeuristica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kruskal/KruskaOrdenadoConHeuristica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kruskal/KruskalOrdenadoSinHeuristica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kruskal/KruskalOrdenadoSinHeuristica.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -20,14 +17,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/kruskal/KruskaOrdenadoConHeuristica.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+            <state relative-caret-position="544">
+              <caret line="32" column="30" lean-forward="true" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/kruskal/KruskalOrdenadoSinHeuristica.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/disjointSet/ConexoDisjointSet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -91,6 +109,7 @@
         <option value="$PROJECT_DIR$/src/kruskal/sorter/Sorter.java" />
         <option value="$PROJECT_DIR$/src/kruskal/sorter/MergeSorter.java" />
         <option value="$PROJECT_DIR$/src/kruskal/KruskaOrdenadoConHeuristica.java" />
+        <option value="$PROJECT_DIR$/src/kruskal/KruskalOrdenadoSinHeuristica.java" />
       </list>
     </option>
   </component>
@@ -223,13 +242,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DisjoinSet.java" />
-    <entry file="file://$PROJECT_DIR$/src/disjointSet/ConexoDisjointSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/kruskal/KruskalMinHeapConHeuristica.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -334,8 +346,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kruskal/KruskaOrdenadoConHeuristica.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+        <state relative-caret-position="544">
+          <caret line="32" column="30" lean-forward="true" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/disjointSet/ConexoDisjointSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kruskal/KruskalOrdenadoSinHeuristica.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
