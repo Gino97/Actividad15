@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c367757-e8f9-4303-8acd-aab975137544" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/grafo/Grafo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/grafo/Grafo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/grafo/Pesado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/grafo/Pesado.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/kruskal/KruskaOrdenadoConHeuristica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kruskal/KruskaOrdenadoConHeuristica.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kruskal/Kruskal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kruskal/Kruskal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kruskal/KruskalMinHeapConHeuristica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kruskal/KruskalMinHeapConHeuristica.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -23,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/kruskal/KruskaOrdenadoConHeuristica.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="731">
+              <caret line="43" column="41" lean-forward="true" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -49,11 +47,11 @@
         <option value="$PROJECT_DIR$/src/grafo/GraftObj.java" />
         <option value="$PROJECT_DIR$/src/AnalisisEmpirico.java" />
         <option value="$PROJECT_DIR$/src/grafo/Arco.java" />
-        <option value="$PROJECT_DIR$/src/grafo/Pesado.java" />
         <option value="$PROJECT_DIR$/src/DisjoinSet.java" />
         <option value="$PROJECT_DIR$/src/kruskal/KruskalMinHeapConHeuristica.java" />
         <option value="$PROJECT_DIR$/src/grafo/Grafo.java" />
         <option value="$PROJECT_DIR$/src/kruskal/Kruskal.java" />
+        <option value="$PROJECT_DIR$/src/grafo/Pesado.java" />
         <option value="$PROJECT_DIR$/src/kruskal/KruskaOrdenadoConHeuristica.java" />
       </list>
     </option>
@@ -66,7 +64,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -75,8 +73,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -111,6 +107,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -159,9 +157,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25716332" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.260745" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -225,31 +224,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/grafo/Pesado.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="24" column="40" lean-forward="true" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/grafo/Arco.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/grafo/Grafo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#282#283#0" expanded="true" />
-            <element signature="e#301#302#0" expanded="true" />
-            <element signature="e#329#330#0" expanded="true" />
-            <element signature="e#348#349#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -277,10 +255,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/grafo/Grafo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#282#283#0" expanded="true" />
+            <element signature="e#301#302#0" expanded="true" />
+            <element signature="e#329#330#0" expanded="true" />
+            <element signature="e#348#349#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/grafo/Pesado.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#313#314#0" expanded="true" />
+            <element signature="e#331#332#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/kruskal/KruskaOrdenadoConHeuristica.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="731">
+          <caret line="43" column="41" lean-forward="true" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

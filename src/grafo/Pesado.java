@@ -12,8 +12,10 @@ public class Pesado {
 		this.peso = peso;
 	}
 
-	
-	
+	public int getPeso() {
+		return peso;
+	}
+
 	public int getNodo1() {
 		return arco.getNodo1();
 	}
