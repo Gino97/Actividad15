@@ -9,6 +9,7 @@ import kruskal.sorter.Sorter;
 import lista.ListaDoble;
 import lista.PositionList;
 
+import java.util.Iterator;
 import java.util.List;
 
 public class KruskalOrdenadoSinHeuristica implements Kruskal {
@@ -21,8 +22,10 @@ public class KruskalOrdenadoSinHeuristica implements Kruskal {
 
         //Esto debería cambiar para que use conjuntos disjuntos sin heurística
         DisjointSet conjuntos = new HeuristicDisjointSet(grafo.getNodos());
+        Iterator<Pesado> iter = arcos.iterator();
+        Pesado arco = iter.next();
 
-        for (Pesado arco:arcos) {
+        while (conjuntos.size() != 1) {
             int conjNodo1 = conjuntos.findSet(arco.getNodo1());
             int conjNodo2 = conjuntos.findSet(arco.getNodo2());
 
@@ -30,6 +33,8 @@ public class KruskalOrdenadoSinHeuristica implements Kruskal {
                 listaResultado.addFirst(arco);
                 conjuntos.union(conjNodo1, conjNodo2);
             }
+
+            arco = iter.next();
         }
 
         return listaResultado;

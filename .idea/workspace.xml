@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c367757-e8f9-4303-8acd-aab975137544" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/cola/Cola.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cola/Cola.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cola/ColaImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cola/ColaImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kruskal/KruskaOrdenadoConHeuristica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kruskal/KruskaOrdenadoConHeuristica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kruskal/KruskalOrdenadoSinHeuristica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kruskal/KruskalOrdenadoSinHeuristica.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -21,8 +21,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/kruskal/KruskaOrdenadoConHeuristica.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="288">
+              <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="24" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -31,24 +31,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/cola/ColaImp.java">
+        <entry file="file://$PROJECT_DIR$/src/kruskal/KruskalOrdenadoSinHeuristica.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="526">
+              <caret line="36" column="31" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
               <folding>
-                <element signature="e#128#129#0" expanded="true" />
-                <element signature="e#162#163#0" expanded="true" />
-                <element signature="e#354#355#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cola/Cola.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -87,10 +76,10 @@
         <option value="$PROJECT_DIR$/src/kruskal/Grafo.java" />
         <option value="$PROJECT_DIR$/src/kruskal/Kruskal.java" />
         <option value="$PROJECT_DIR$/src/kruskal/KruskalMinHeapConHeuristica.java" />
-        <option value="$PROJECT_DIR$/src/kruskal/KruskalOrdenadoSinHeuristica.java" />
-        <option value="$PROJECT_DIR$/src/kruskal/KruskaOrdenadoConHeuristica.java" />
         <option value="$PROJECT_DIR$/src/cola/Cola.java" />
         <option value="$PROJECT_DIR$/src/cola/ColaImp.java" />
+        <option value="$PROJECT_DIR$/src/kruskal/KruskaOrdenadoConHeuristica.java" />
+        <option value="$PROJECT_DIR$/src/kruskal/KruskalOrdenadoSinHeuristica.java" />
       </list>
     </option>
   </component>
@@ -341,16 +330,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/kruskal/KruskalOrdenadoSinHeuristica.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="60" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/kruskal/sorter/Sorter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -373,16 +352,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/kruskal/KruskaOrdenadoConHeuristica.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cola/Cola.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -398,6 +367,26 @@
             <element signature="e#128#129#0" expanded="true" />
             <element signature="e#162#163#0" expanded="true" />
             <element signature="e#354#355#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kruskal/KruskaOrdenadoConHeuristica.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="24" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kruskal/KruskalOrdenadoSinHeuristica.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="36" column="31" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
