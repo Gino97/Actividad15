@@ -5,13 +5,17 @@ import lista.*;
 public class ColaImp<E> implements Cola<E> {
 	private PositionList<E> lista;
 
-	public ColaImp<E>() {
-		lista = new ListaDoble<E>();
+	public ColaImp() {
+		lista = new ListaDoble<>();
 	}
 
 	@Override
-	public E dequeue() throws EmptyListException {
-		return lista.remove(lista.first());
+	public E dequeue() {
+		try {
+			return lista.remove(lista.first());
+		} catch (Exception e) {
+			return null;
+		}
 	}
 
 	@Override
