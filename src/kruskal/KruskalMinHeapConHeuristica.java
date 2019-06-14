@@ -4,6 +4,8 @@ import disjointSet.DisjointSet;
 import disjointSet.HeuristicDisjointSet;
 import grafo.Grafo;
 import grafo.Pesado;
+import heap.Heap;
+import heap.HeapImp;
 import lista.ListaDoble;
 import lista.PositionList;
 
@@ -13,7 +15,7 @@ public class KruskalMinHeapConHeuristica implements Kruskal {
     public PositionList<Pesado> kruskal(Grafo grafo) {
         PositionList<Pesado> listaResultado = new ListaDoble<>();
         List<Pesado> arcos = grafo.getArcos();
-        Heap heap = new Heap(arcos);
+        Heap heap = new HeapImp(arcos);
 
         DisjointSet conjuntos = new HeuristicDisjointSet(grafo.getNodos());
 
