@@ -12,7 +12,10 @@ public class HeapImp implements Heap {
         Heap = new Pesado[list.size() + 1];
         size = list.size()+1;
         Heap[0] = null;
-        minHeap();
+        int cont = 1;
+        for (Pesado arco :list){
+            Heap[cont++]= arco;
+        }
     }
     // Function to build the min heap using
     // the minHeapify
