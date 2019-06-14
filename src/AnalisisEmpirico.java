@@ -14,8 +14,9 @@ import grafo.Grafo;
 		public static void main(String[] args) throws IOException {
 			
 			try{
-				Grafo grafo = getGrafo(500,1000);
+				Grafo grafo = getGrafo(6,6);
 				System.out.println("Grafo conexo con "+ grafo.getNodosCount() + " nodos y "+ grafo.getArcosCount() + " arcos construido");
+				//System.out.println(grafo.bfs());
 				ConexoDisjointSet conexoDisjointSet = new ConexoDisjointSet(grafo);
 				System.out.println(conexoDisjointSet.conexo());
 			} catch (Exception e) {
