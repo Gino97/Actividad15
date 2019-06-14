@@ -9,8 +9,14 @@ public class Grafo {
 	private char[] color;
 	private ArrayList<Integer>[] listaAdyacencia;
 
-	
-	
+	public ArrayList<Pesado> getArcos() {
+		return arcos;
+	}
+
+	public int[] getNodos() {
+		return nodos;
+	}
+
 	public ArrayList<Integer> getAdyacentesBlancos(int n){
 		ArrayList<Integer> arcosAux = new ArrayList<>();
 		for(int i=0; i<listaAdyacencia[n].size(); i++) {

@@ -4,5 +4,5 @@ import grafo.*;
 
 public interface Kruskal {
 
-     PositionList<Arco> kruskal();
+     PositionList<Pesado> kruskal();
 }
