@@ -11,7 +11,7 @@ import lista.PositionList;
 
 import java.util.List;
 
-public class KruskalOrdenadoSinHeuristica {
+public class KruskalOrdenadoSinHeuristica implements Kruskal {
     public PositionList<Pesado> kruskal(Grafo grafo) {
         PositionList<Pesado> listaResultado = new ListaDoble<>();
         List<Pesado> arcos = grafo.getArcos();

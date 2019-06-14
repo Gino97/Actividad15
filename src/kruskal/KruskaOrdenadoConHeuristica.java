@@ -10,7 +10,7 @@ import lista.ListaDoble;
 import lista.PositionList;
 import java.util.List;
 
-public class KruskaOrdenadoConHeuristica {
+public class KruskaOrdenadoConHeuristica implements Kruskal {
     public PositionList<Pesado> kruskal(Grafo grafo) {
         PositionList<Pesado> listaResultado = new ListaDoble<>();
         List<Pesado> arcos = grafo.getArcos();

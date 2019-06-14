@@ -9,7 +9,7 @@ import lista.PositionList;
 
 import java.util.List;
 
-public class KruskalMinHeapSinHeuristica {
+public class KruskalMinHeapSinHeuristica implements Kruskal {
     public PositionList<Pesado> kruskal(Grafo grafo) {
         PositionList<Pesado> listaResultado = new ListaDoble<>();
         List<Pesado> arcos = grafo.getArcos();
