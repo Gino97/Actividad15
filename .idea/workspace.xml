@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c367757-e8f9-4303-8acd-aab975137544" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/kruskal/Kruskal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kruskal/Kruskal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kruskal/KruskalMinHeapConHeuristica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kruskal/KruskalMinHeapConHeuristica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kruskal/KruskalMinHeapSinHeuristica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kruskal/KruskalMinHeapSinHeuristica.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -18,11 +17,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/kruskal/KruskalMinHeapConHeuristica.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+            <state relative-caret-position="204">
+              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="31" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/kruskal/KruskalMinHeapSinHeuristica.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="78" selection-start-line="17" selection-start-column="78" selection-end-line="17" selection-end-column="78" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,6 +75,7 @@
         <option value="$PROJECT_DIR$/src/kruskal/KruskalOrdenadoSinHeuristica.java" />
         <option value="$PROJECT_DIR$/src/kruskal/Kruskal.java" />
         <option value="$PROJECT_DIR$/src/kruskal/KruskalMinHeapConHeuristica.java" />
+        <option value="$PROJECT_DIR$/src/kruskal/KruskalMinHeapSinHeuristica.java" />
       </list>
     </option>
   </component>
@@ -324,8 +336,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kruskal/KruskalMinHeapConHeuristica.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+        <state relative-caret-position="204">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="31" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kruskal/KruskalMinHeapSinHeuristica.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="78" selection-start-line="17" selection-start-column="78" selection-end-line="17" selection-end-column="78" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
