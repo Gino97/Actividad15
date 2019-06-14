@@ -1,11 +1,11 @@
-package disjointSet;
+package ejercicios.ejercicio1;
 
+import disjointSet.DisjointSet;
+import disjointSet.HeuristicDisjointSet;
 import grafo.Grafo;
 import grafo.Pesado;
 
 import java.util.ArrayList;
-
-import static java.lang.System.exit;
 
 public class ConexoDisjointSet {
 

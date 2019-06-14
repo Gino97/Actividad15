@@ -12,8 +12,8 @@ public class HeuristicDisjointSet implements DisjointSet{
         rank = new int[nodos.length];
         for(int i=0; i<nodos.length; i++){
             makeSet(i);
-            size++;
         }
+        size = nodos.length;
     }
 
     public int findSet(int nodo){

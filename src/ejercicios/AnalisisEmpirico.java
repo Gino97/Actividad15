@@ -1,7 +1,10 @@
+package ejercicios;
+
 import java.io.IOException;
 import java.io.InputStream;
 
-import disjointSet.ConexoDisjointSet;
+import ejercicios.ejercicio1.ConexoBFS;
+import ejercicios.ejercicio1.ConexoDisjointSet;
 import grafo.*;
 import java.util.Scanner;
 import com.google.gson.Gson;
@@ -16,7 +19,8 @@ import grafo.Grafo;
 			try{
 				Grafo grafo = getGrafo(6,6);
 				System.out.println("Grafo conexo con "+ grafo.getNodosCount() + " nodos y "+ grafo.getArcosCount() + " arcos construido");
-				//System.out.println(grafo.bfs());
+				/*ConexoBFS conexoBFS = new ConexoBFS(grafo);
+				System.out.println(conexoBFS.conexo());*/
 				ConexoDisjointSet conexoDisjointSet = new ConexoDisjointSet(grafo);
 				System.out.println(conexoDisjointSet.conexo());
 			} catch (Exception e) {
