@@ -1,6 +1,6 @@
 package kruskal;
-import lista.*;
-import grafo.*;
+import lista.PositionList;
+import grafo.Pesado;
 
 public interface Kruskal {
 
