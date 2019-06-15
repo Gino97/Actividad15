@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c367757-e8f9-4303-8acd-aab975137544" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kruskal/KruskalMinHeapSinHeuristica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kruskal/KruskalMinHeapSinHeuristica.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kruskal/KruskalOrdenadoSinHeuristica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kruskal/KruskalOrdenadoSinHeuristica.java" afterDir="false" />
-    </list>
+    <list default="true" id="7c367757-e8f9-4303-8acd-aab975137544" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,20 +14,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/kruskal/KruskalMinHeapSinHeuristica.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -107,6 +90,12 @@
               <item name="Actividad15" type="b2602c69:ProjectViewProjectNode" />
               <item name="Actividad15" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="grafo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Actividad15" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Actividad15" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="kruskal" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -174,7 +163,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26432666" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -262,13 +250,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/disjointSet/ConexoDisjointSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="29" column="34" lean-forward="true" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/disjointSet/ConexoDisjointSet.java" />
     <entry file="file://$PROJECT_DIR$/src/kruskal/Grafo.java" />
     <entry file="file://$PROJECT_DIR$/src/kruskal/Kruskal.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -339,16 +321,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AnalisisEmpirico.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="21" column="51" lean-forward="true" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AnalisisEmpirico.java" />
     <entry file="file://$PROJECT_DIR$/src/kruskal/sorter/MergeSorter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
