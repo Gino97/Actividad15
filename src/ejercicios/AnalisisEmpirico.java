@@ -22,103 +22,59 @@ public class AnalisisEmpirico{
 				Grafo grafo = getGrafo(500,100000);
 				System.out.println("Grafo conexo con "+ grafo.getNodosCount() + " nodos y "+ grafo.getArcosCount() + " arcos construido");
 
-				//System.out.println(grafo.toString());
+				long init = System.nanoTime();
 
-				long init = System.currentTimeMillis();
-
+				System.out.println("Conexo usando BFS:");
 				ConexoBFS conexoBFS = new ConexoBFS(grafo);
 				System.out.println(conexoBFS.conexo());
 
-				long end = System.currentTimeMillis();
+				long end = System.nanoTime();
 				System.out.println("El metodo tardo:"+ (end-init));
 
-				init = System.currentTimeMillis();
+				init = System.nanoTime();
 
+				System.out.println("Conexo usando DisjointSet c/ Heuristica:");
 				ConexoDisjointSet conexoDisjointSet = new ConexoDisjointSet(grafo);
 				System.out.println(conexoDisjointSet.conexo());
 
-				end = System.currentTimeMillis();
+				end = System.nanoTime();
 				System.out.println("El metodo tardo:"+ (end-init));
 
+
+				System.out.println("Kruskal minHeap s/ heuristica:");
+				Kruskal kruskal = new KruskalMinHeapSinHeuristica();
+
+				init = System.nanoTime();
+				kruskal.kruskal(grafo);
+				end = System.nanoTime();
+
+				System.out.println("El metodo tardo:"+ (end-init));
 
 				System.out.println("Kruskal minHeap c/ Heuristica:");
-				Kruskal kruskal = new KruskalMinHeapConHeuristica();
+				kruskal = new KruskalMinHeapConHeuristica();
 
-				init = System.currentTimeMillis();
-				PositionList<Pesado> lista = kruskal.kruskal(grafo);
-				end = System.currentTimeMillis();
+				init = System.nanoTime();
+				kruskal.kruskal(grafo);
+				end = System.nanoTime();
 
 				System.out.println("El metodo tardo:"+ (end-init));
-
-				String res = "";
-				for(Pesado arco : lista){
-					if(res=="")
-						res = arco.toString();
-					else
-						res = res + ","+arco.toString();
-				}
-				//System.out.println(res);
 
 				System.out.println("Kruskal ordenado s/ heuristica:");
 				kruskal = new KruskalOrdenadoSinHeuristica();
-				init = System.currentTimeMillis();
-				lista = kruskal.kruskal(grafo);
-				end = System.currentTimeMillis();
+				init = System.nanoTime();
+				kruskal.kruskal(grafo);
+				end = System.nanoTime();
 
 				System.out.println("El metodo tardo:"+ (end-init));
-
-				System.out.println("Kruskal minHeap s/ heuristica:");
-				kruskal = new KruskalMinHeapSinHeuristica();
-
-				init = System.currentTimeMillis();
-				lista = kruskal.kruskal(grafo);
-				end = System.currentTimeMillis();
-
-				System.out.println("El metodo tardo:"+ (end-init));
-
-				res = "";
-				for(Pesado arco : lista){
-					if(res=="")
-						res = arco.toString();
-					else
-						res = res + ","+arco.toString();
-				}
-				//System.out.println(res);
 
 				System.out.println("Kruskal ordenado c/ heuristica:");
 				kruskal = new KruskalOrdenadoConHeuristica();
 
-				init = System.currentTimeMillis();
-				lista = kruskal.kruskal(grafo);
-				end = System.currentTimeMillis();
+				init = System.nanoTime();
+				kruskal.kruskal(grafo);
+				end = System.nanoTime();
 
 				System.out.println("El metodo tardo:"+ (end-init));
-
-				res = "";
-				for(Pesado arco : lista){
-					if(res=="")
-						res = arco.toString();
-					else
-						res = res + ","+arco.toString();
-				}
-				//System.out.println(res);
-
-				System.out.println("Kruskal ordenado s/ heuristica:");
-				kruskal = new KruskalOrdenadoSinHeuristica();
-				init = System.currentTimeMillis();
-				lista = kruskal.kruskal(grafo);
-				end = System.currentTimeMillis();
-
-				System.out.println("El metodo tardo:"+ end + " 	" +init);
-
-				res = "";
-				for(Pesado arco : lista){
-					if(res=="")
-						res = arco.toString();
-					else
-						res = res + ","+arco.toString();
-				}
-				//System.out.println(res);
 
 
 			} catch (Exception e) {
