@@ -11,18 +11,44 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 import grafo.Grafo;
+import kruskal.Kruskal;
+import kruskal.KruskalMinHeapConHeuristica;
 
-	public class AnalisisEmpirico{
+public class AnalisisEmpirico{
 		
 		public static void main(String[] args) throws IOException {
 			
 			try{
-				Grafo grafo = getGrafo(6,6);
+				Grafo grafo = getGrafo(500,120000	);
 				System.out.println("Grafo conexo con "+ grafo.getNodosCount() + " nodos y "+ grafo.getArcosCount() + " arcos construido");
-				/*ConexoBFS conexoBFS = new ConexoBFS(grafo);
-				System.out.println(conexoBFS.conexo());*/
+
+				long init = System.currentTimeMillis();
+
+				ConexoBFS conexoBFS = new ConexoBFS(grafo);
+				System.out.println(conexoBFS.conexo());
+
+				long end = System.currentTimeMillis();
+				System.out.println("El metodo tardo:"+ (end-init));
+
+				init = System.currentTimeMillis();
+
 				ConexoDisjointSet conexoDisjointSet = new ConexoDisjointSet(grafo);
 				System.out.println(conexoDisjointSet.conexo());
+
+				end = System.currentTimeMillis();
+				System.out.println("El metodo tardo:"+ (end-init));
+
+				System.out.println("Kruskal:");
+				Kruskal kruskal = new KruskalMinHeapConHeuristica();
+
+				init = System.currentTimeMillis();
+				kruskal.kruskal(grafo);
+				end = System.currentTimeMillis();
+
+				System.out.println("El metodo tardo:"+ (end-init));
+
+
+
 			} catch (Exception e) {
 				System.out.println(e.getMessage());
 			}
