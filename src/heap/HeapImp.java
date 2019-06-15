@@ -47,13 +47,8 @@ public class HeapImp implements Heap {
         return (2 * pos) + 1;
     }
 
-    // Function that returns true if the passed
-    // node is a leaf node
-    private boolean isLeaf(int pos) {
-        if (pos >= (size / 2) && pos <= size) {
-            return true;
-        }
-        return false;
+    private boolean hasBothChildren(int pos) {
+        return leftChild(pos)<=size && rightChild(pos)<=size ? true : false;
     }
 
     // Function to swap two nodes of the heap
@@ -66,10 +61,9 @@ public class HeapImp implements Heap {
 
     // Function to heapify the node at pos
     private void minHeapify(int pos) {
-
         // If the node is a non-leaf node and greater
         // than any of its child
-        if (!isLeaf(pos)) {
+        if (hasBothChildren(pos)) {
             if (heap[pos].getPeso() > heap[leftChild(pos)].getPeso()
                     || heap[pos].getPeso() > heap[rightChild(pos)].getPeso()) {
 
@@ -87,6 +81,8 @@ public class HeapImp implements Heap {
                     minHeapify(rightChild(pos));
                 }
             }
+        } else if (leftChild(pos)<=size && (heap[pos].getPeso() > heap[leftChild(pos)].getPeso())) {
+            swap(pos, leftChild(pos));
         }
     }
 
@@ -97,5 +93,14 @@ public class HeapImp implements Heap {
         heap[1] = heap[size--];
         minHeapify(1);
         return popped;
+    }
+
+    public void printHeap() {
+        String string = "[";
+        for (int i=1; i<=size; i++) {
+            string = string + heap[i].getPeso()+", ";
+        }
+
+        System.out.println(string + "]");
     }
 }

@@ -17,10 +17,13 @@ public class HeapTester {
         lista.add(new Pesado(1, 2, 8));
         lista.add(new Pesado(1, 2, 7));
 
-        Heap heap = new HeapImp(lista);
+        HeapImp heap = new HeapImp(lista);
+
+        heap.printHeap();
 
         for (int i=0; i<=lista.size()-1; i++) {
             System.out.println(heap.removeMin().getPeso());
+            heap.printHeap();
         }
     }
 }
