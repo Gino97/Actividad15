@@ -17,8 +17,8 @@ public class MergeSorter implements Sorter {
 
             return listaRet;
         } else {
-            List<Pesado> lista1 = ordenarMerge(lista, i, (int) Math.floor(j/2));
-            List<Pesado> lista2 = ordenarMerge(lista, (int) Math.floor(j/2)+1, j);
+            List<Pesado> lista1 = ordenarMerge(lista, i, (int) Math.floor((i+j)/2));
+            List<Pesado> lista2 = ordenarMerge(lista, (int) Math.floor((i+j)/2)+1, j);
 
             return merge(lista1, lista2);
         }
