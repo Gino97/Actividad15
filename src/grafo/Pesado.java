@@ -37,4 +37,8 @@ public class Pesado {
 			i = arco.getNodo1();
 		return i;
 	}
+
+	public String toString(){
+		return "[["+arco.getNodo1()+","+arco.getNodo2()+"],"+peso+"]";
+	}
 }

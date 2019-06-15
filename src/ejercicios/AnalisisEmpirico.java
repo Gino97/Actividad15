@@ -13,14 +13,17 @@ import com.google.gson.GsonBuilder;
 import grafo.Grafo;
 import kruskal.Kruskal;
 import kruskal.KruskalMinHeapConHeuristica;
+import lista.PositionList;
 
 public class AnalisisEmpirico{
 		
 		public static void main(String[] args) throws IOException {
 			
 			try{
-				Grafo grafo = getGrafo(500,120000	);
+				Grafo grafo = getGrafo(6,6	);
 				System.out.println("Grafo conexo con "+ grafo.getNodosCount() + " nodos y "+ grafo.getArcosCount() + " arcos construido");
+
+				System.out.println(grafo.toString());
 
 				long init = System.currentTimeMillis();
 
@@ -42,10 +45,19 @@ public class AnalisisEmpirico{
 				Kruskal kruskal = new KruskalMinHeapConHeuristica();
 
 				init = System.currentTimeMillis();
-				kruskal.kruskal(grafo);
+				PositionList<Pesado> lista = kruskal.kruskal(grafo);
 				end = System.currentTimeMillis();
 
 				System.out.println("El metodo tardo:"+ (end-init));
+
+				String res = "";
+				for(Pesado arco : lista){
+					if(res=="")
+						res = arco.toString();
+					else
+						res = res + ","+arco.toString();
+				}
+				System.out.println(res);
 
 
 

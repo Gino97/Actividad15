@@ -1,7 +1,5 @@
 package grafo;
 import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Queue;
 
 public class Grafo {
 	private int[] nodos;
@@ -55,7 +53,17 @@ public class Grafo {
 	public int getArcosCount(){
 		return this.arcos.size();
 	}
-	
+
+	public String toString(){
+		String res = "";
+		for(Pesado arco : arcos){
+			if(res=="")
+				res = arco.toString();
+			else
+				res = res + ","+arco.toString();
+		}
+		return res;
+	}
 	
 
 }
