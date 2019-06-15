@@ -1,7 +1,7 @@
 package kruskal;
 
 import disjointSet.DisjointSet;
-import disjointSet.HeuristicDisjointSet;
+import disjointSet.NoHeuristicDisjointSet;
 import grafo.Grafo;
 import grafo.Pesado;
 import heap.Heap;
@@ -17,8 +17,7 @@ public class KruskalMinHeapSinHeuristica implements Kruskal {
         List<Pesado> arcos = grafo.getArcos();
         Heap heap = new HeapImp(arcos);
 
-        //Esto debería cambiar para que use conjuntos disjuntos sin heurística
-        DisjointSet conjuntos = new HeuristicDisjointSet(grafo.getNodos());
+        DisjointSet conjuntos = new NoHeuristicDisjointSet(grafo.getNodos());
 
         while (conjuntos.size()!=1) {
             Pesado arco = heap.removeMin();

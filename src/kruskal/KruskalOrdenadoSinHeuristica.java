@@ -1,7 +1,7 @@
 package kruskal;
 
 import disjointSet.DisjointSet;
-import disjointSet.HeuristicDisjointSet;
+import disjointSet.NoHeuristicDisjointSet;
 import grafo.Grafo;
 import grafo.Pesado;
 import kruskal.sorter.MergeSorter;
@@ -20,8 +20,7 @@ public class KruskalOrdenadoSinHeuristica implements Kruskal {
         Sorter sorter = new MergeSorter();
         arcos = sorter.sort(arcos);
 
-        //Esto debería cambiar para que use conjuntos disjuntos sin heurística
-        DisjointSet conjuntos = new HeuristicDisjointSet(grafo.getNodos());
+        DisjointSet conjuntos = new NoHeuristicDisjointSet(grafo.getNodos());
         Iterator<Pesado> iter = arcos.iterator();
         Pesado arco = iter.next();
 
