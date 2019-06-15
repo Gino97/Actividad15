@@ -12,6 +12,11 @@ public class Pesado {
 		this.peso = peso;
 	}
 
+	public Pesado(int i, int j, int peso) {
+		this.arco = new Arco(i, j);
+		this.peso = peso;
+	}
+
 	public int getPeso() {
 		return peso;
 	}
