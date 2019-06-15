@@ -5,16 +5,16 @@ import grafo.Pesado;
 import java.util.List;
 
 public class HeapImp implements Heap {
-    private Pesado[] Heap;
+    private Pesado[] heap;
     private int size;
 
     public HeapImp(List<Pesado> list) {
-        Heap = new Pesado[list.size() + 1];
+        heap = new Pesado[list.size() + 1];
         size = list.size()+1;
-        Heap[0] = null;
+        heap[0] = null;
         int cont = 1;
         for (Pesado arco :list){
-            Heap[cont++]= arco;
+            heap[cont++]= arco;
         }
     }
     // Function to build the min heap using
@@ -57,9 +57,9 @@ public class HeapImp implements Heap {
     // Function to swap two nodes of the heap
     private void swap(int fpos, int spos) {
         Pesado tmp;
-        tmp = Heap[fpos];
-        Heap[fpos] = Heap[spos];
-        Heap[spos] = tmp;
+        tmp = heap[fpos];
+        heap[fpos] = heap[spos];
+        heap[spos] = tmp;
     }
 
     // Function to heapify the node at pos
@@ -68,12 +68,12 @@ public class HeapImp implements Heap {
         // If the node is a non-leaf node and greater
         // than any of its child
         if (!isLeaf(pos)) {
-            if (Heap[pos].getPeso() > Heap[leftChild(pos)].getPeso()
-                    || Heap[pos].getPeso() > Heap[rightChild(pos)].getPeso()) {
+            if (heap[pos].getPeso() > heap[leftChild(pos)].getPeso()
+                    || heap[pos].getPeso() > heap[rightChild(pos)].getPeso()) {
 
                 // Swap with the left child and heapify
                 // the left child
-                if (Heap[leftChild(pos)].getPeso() < Heap[rightChild(pos)].getPeso()) {
+                if (heap[leftChild(pos)].getPeso() < heap[rightChild(pos)].getPeso()) {
                     swap(pos, leftChild(pos));
                     minHeapify(leftChild(pos));
                 }
@@ -91,8 +91,8 @@ public class HeapImp implements Heap {
     // Function to remove and return the minimum
     // element from the heap
     public Pesado removeMin() {
-        Pesado popped = Heap[1];
-        Heap[1] = Heap[size--];
+        Pesado popped = heap[1];
+        heap[1] = heap[size--];
         minHeapify(1);
         return popped;
     }
