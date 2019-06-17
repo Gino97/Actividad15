@@ -1,12 +1,12 @@
-package ejercicios.ejercicio1;
+package conexo;
 
+import cola.Cola;
+import cola.ColaImp;
 import grafo.Grafo;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Queue;
 
-public class ConexoBFS {
+public class ConexoBFS implements Conexo{
 
     private Grafo grafo;
     private int[] nodos;
@@ -24,20 +24,20 @@ public class ConexoBFS {
         for(int i=0; i<color.length; i++) {
             color[i]='B';
         }
-        Queue<Integer> cola = new LinkedList<>();
+        Cola<Integer> cola = new ColaImp<Integer>();
         color[nodos[0]]='G';
-        cola.add(nodos[0]);
+        cola.enqueue(nodos[0]);
         visitarBF(cola);
     }
 
-    public void visitarBF(Queue<Integer> cola) {
-        while(cola.size()>0) {
-            int nodo = cola.poll();
+    public void visitarBF(Cola<Integer> cola) {
+        while(!cola.isEmpty()) {
+            int nodo = cola.dequeue();
             for(int i=0; i<listaAdyacencia[nodo].size(); i++) {
                 int nodoAux = listaAdyacencia[nodo].get(i);
                 if(color[nodoAux]=='B') {
                     color[nodoAux] = 'G';
-                    cola.add(nodoAux);
+                    cola.enqueue(nodoAux);
                 }
             }
             color[nodo] = 'N';

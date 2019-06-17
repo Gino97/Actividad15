@@ -1,10 +1,10 @@
-package ejercicios;
+package main;
 
 import java.io.IOException;
 import java.io.InputStream;
 
-import ejercicios.ejercicio1.ConexoBFS;
-import ejercicios.ejercicio1.ConexoDisjointSet;
+import conexo.ConexoBFS;
+import conexo.ConexoDisjointSet;
 import grafo.*;
 import java.util.Scanner;
 import com.google.gson.Gson;
@@ -12,7 +12,6 @@ import com.google.gson.GsonBuilder;
 
 import grafo.Grafo;
 import kruskal.*;
-import lista.PositionList;
 
 public class AnalisisEmpirico{
 		

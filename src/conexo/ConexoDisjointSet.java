@@ -1,13 +1,13 @@
-package ejercicios.ejercicio1;
+package conexo;
 
-import disjointSet.DisjointSet;
-import disjointSet.HeuristicDisjointSet;
+import disjointset.DisjointSet;
+import disjointset.HeuristicDisjointSet;
 import grafo.Grafo;
 import grafo.Pesado;
 
 import java.util.ArrayList;
 
-public class ConexoDisjointSet {
+public class ConexoDisjointSet implements Conexo{
 
     private Grafo grafo;
     private DisjointSet disjointSet;

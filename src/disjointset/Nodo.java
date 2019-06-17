@@ -1,4 +1,4 @@
-package disjointSet;
+package disjointset;
 
 public class Nodo {
 

@@ -1,4 +1,4 @@
-package disjointSet;
+package disjointset;
 
 public interface DisjointSet {
 	int findSet(int nodo);

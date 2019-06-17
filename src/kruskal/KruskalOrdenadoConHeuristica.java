@@ -1,7 +1,7 @@
 package kruskal;
 
-import disjointSet.DisjointSet;
-import disjointSet.HeuristicDisjointSet;
+import disjointset.DisjointSet;
+import disjointset.HeuristicDisjointSet;
 import grafo.Grafo;
 import grafo.Pesado;
 import kruskal.sorter.MergeSorter;
