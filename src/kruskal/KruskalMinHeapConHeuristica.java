@@ -15,8 +15,10 @@ public class KruskalMinHeapConHeuristica implements Kruskal {
     public PositionList<Pesado> kruskal(Grafo grafo) {
         PositionList<Pesado> listaResultado = new ListaDoble<>();
         List<Pesado> arcos = grafo.getArcos();
+        //crea un minHeap
         Heap heap = new HeapImp(arcos);
 
+        //crea el conjunto con heurisitca
         DisjointSet conjuntos = new HeuristicDisjointSet(grafo.getNodos());
 
         while (conjuntos.size()!=1) {

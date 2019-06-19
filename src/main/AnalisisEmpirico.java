@@ -18,7 +18,7 @@ public class AnalisisEmpirico{
 		public static void main(String[] args) throws IOException {
 			
 			try{
-				Grafo grafo = getGrafo(500,100000);
+				Grafo grafo = getGrafo(10,30);
 				System.out.println("Grafo conexo con "+ grafo.getNodosCount() + " nodos y "+ grafo.getArcosCount() + " arcos construido");
 
 				long init = System.nanoTime();
@@ -94,7 +94,7 @@ public class AnalisisEmpirico{
 
 		private static Grafo getGrafo(int nodos, int arcos) throws Exception {
 			// TODO Auto-generated method stub
-			String consulta = "curl http://cs.uns.edu.ar/~mom/AyC2019/grafo.php?nodos="+nodos+"&arcos="+arcos;
+			String consulta = "curl http://cs.uns.edu.ar/~mom/AyC2019/grafo.php?nodos="+nodos+"&arcos="+arcos+"&conexo=1";
 			Process process = Runtime.getRuntime().exec(consulta);
 			InputStream inputSt = process.getInputStream();
 			@SuppressWarnings("resource")
